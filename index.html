@@ -4,82 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <!-- Exchange Rate Section -->
+<body class="bg-[#fdf5ef] flex items-center justify-center min-h-screen p-6">
 
-    <div class="bg-black h-[100%]">
-        <div class="flex justify-center">
-            <div class="font-bold text-[30px] mt-5 text-white ">
-                <p>Exchange Rate</p>
+    <div class="bg-white rounded-2xl shadow-md w-full max-w-5xl overflow-hidden">
+
+        <!-- Header -->
+        <div
+            class="grid grid-cols-4 bg-orange-500 text-white font-bold font-[calibri] py-6 px-6 text-center text-[21px]">
+            <div>COUNTRY</div>
+            <div>CURRENCY</div>
+            <div>PAYMENT TYPE</div>
+            <div>EXCHANGE RATE</div>
+        </div>
+
+        <!-- Table -->
+        <div class="grid grid-cols-4">
+
+            <!-- Country Column -->
+            <div class="border-r border-gray-200 row-span-6 flex justify-center items-start p-4">
+                <div class="flex items-center gap-3">
+                    <img src="Flag_of_Pakistan.svg.png" class="w-10 h-10 rounded-full border" alt="Pakistan">
+                    <span class="text-gray-700 text-lg font-medium">Pakistan</span>
+                </div>
             </div>
-        </div>
-        <div class="flex justify-center">
-            <table class="w-[60vw] border-collapse text-left">
-                <thead>
-                    <tr class="bg-orange-500 text-white">
-                        <th class="p-4 font-semibold">Country</th>
-                        <th class="p-4 font-semibold">Currency</th>
-                        <th class="p-4 font-semibold">Payment Type</th>
-                        <th class="p-4 font-semibold">Exchange Rate</th>
-                    </tr>
-                </thead>
 
-                <tbody>
-                    <tr class="odd:bg-white even:bg-gray-100">
-                        <td class="p-4 flex items-center gap-2 border-r border-gray-300">
-                            <img src="Flag_of_Pakistan.svg.png" alt="" class=" rounded-4xl h-8 w-8" />
-                            Pakistan
-                        </td>
+            <!-- Currency Column -->
+            <div class="border-r border-gray-200 row-span-6 flex items-start p-6">
+                <span class="text-gray-700 text-lg font-medium">PKR</span>
+            </div>
 
-                        <td class="p-4 border-r border-gray-300">PKR</td>
+            <!-- Payment Type & Exchange Rate -->
 
-                        <td class="p-4 border-r border-gray-300">
-                            Special Promotional Rate for Account Deposit Under AUD 400
-                        </td>
+            <!-- Row 1 -->
+            <div class="p-6 bg-gray-100 border-r border-gray-200">
+                <p class="text-gray-800 font-medium">
+                    Special Promotional Rate for Account Deposit Under AUD 400
+                </p>
+            </div>
+            <div class="p-6 bg-gray-100 font-semibold text-gray-800 text-lg">188.55</div>
 
-                        <td class="p-4 font-semibold">188.55</td>
-                    </tr>
+            <!-- Row 2 -->
+            <div class="p-6 border-r border-gray-200">
+                <p class="text-gray-800 font-medium">
+                    Account Deposit Above AUD 400
+                </p>
+            </div>
+            <div class="p-6 font-semibold text-gray-800 text-lg">186.10</div>
 
-                    <tr class="odd:bg-white even:bg-gray-100">
-                        <td class="p-4 flex items-center gap-2 border-r border-gray-300">
-                            
-                        </td>
+            <!-- Row 3 -->
+            <div class="p-6 bg-gray-100 border-r border-gray-200">
+                <p class="text-gray-800 font-medium">ROSHAN Digital Account</p>
+            </div>
+            <div class="p-6 bg-gray-100 font-semibold text-gray-800 text-lg">186.00</div>
 
-                        <td class="p-4 border-r border-gray-300">PKR</td>
+            <!-- Row 4 -->
+            <div class="p-6 border-r border-gray-200">
+                <p class="text-gray-800 font-medium">Cash Payment</p>
+            </div>
+            <div class="p-6 font-semibold text-gray-800 text-lg">186.00</div>
 
-                        <td class="p-4 border-r border-gray-300">
-                            Account Deposit Above AUD 400
-                        </td>
+            <!-- Row 5 -->
+            <div class="p-6 bg-gray-100 border-r border-gray-200">
+                <p class="text-gray-800 font-medium">Sada Pay</p>
+            </div>
+            <div class="p-6 bg-gray-100 font-semibold text-gray-800 text-lg">186.00</div>
 
-                        <td class="p-4 font-semibold">186.10</td>
-                    </tr>
-
-                    <tr class="odd:bg-white even:bg-gray-100">
-                        <td class="p-4 flex items-center gap-2 border-r border-gray-300">
-                            
-                        </td>
-
-                        <td class="p-4 border-r border-gray-300">PKR</td>
-
-                        <td class="p-4 border-r border-gray-300">
-                            Account Deposit Above AUD 400
-                        </td>
-
-                        <td class="p-4 font-semibold">186.10</td>
-                    </tr>
-
-                    <!-- more rows -->
-                </tbody>
-            </table>
-
+            <!-- Row 6 -->
+            <div class="p-6 border-r border-gray-200">
+                <p class="text-gray-800 font-medium">NayaPay</p>
+            </div>
+            <div class="p-6 font-semibold text-gray-800 text-lg">186.00</div>
 
         </div>
+
     </div>
-    </div>
+
 </body>
 
-</html>`
+</html>
